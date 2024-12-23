@@ -400,6 +400,8 @@
     /* Mobile CTA Buttons */
     .mobile-cta {
         display: none;
+	color: transparent; /* на всякий случай */
+    text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -461,6 +463,13 @@
         .faq-item h3 {
             font-size: 1em;
         }
+	.mobile-cta:link,
+.mobile-cta:visited,
+.mobile-cta:hover,
+.mobile-cta:active {
+  color: #000 !important;
+  text-decoration: none;
+}
     }
 
     /* Language-specific styles */
